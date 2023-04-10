@@ -1,0 +1,24 @@
+package sj;
+
+import java.util.Scanner;
+
+public class factorial {
+
+	public static void main(String[] args) {
+		Scanner S=new Scanner(System.in);
+		System.out.print("enter value");
+		int n=S.nextInt();
+		findfactorial(n);
+	}
+	public static void findfactorial(int num)
+	{
+		int fact=1,i;
+		for(i=1;i<=num;i++)
+		{
+			fact=fact*i;
+		}
+		System.out.println("factorial\n"+fact);
+	 
+	}
+
+}
